@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> <meta charset='utf-8'><link rel="stylesheet" href="dist/0000.css"><script src="dist/0000.asp"></script></head><img src="" alt="" class="responsive"/>
+<body><div id="overlay"><div id="progstat"></div><div id="progress"></div></div>
+<style>
+@media screen and (min-width: 401px) {
+
+
+blockquote{font: 15px/2 Georgia, Serif;}
+}
+
+@media screen and (max-width: 400px) {
+
+
+blockquote{font: 9px/2 Georgia, Serif;width: 80%;
+  }
+
+
+}
+
+
+     .responsive {width: 100%;height: auto;}
+               * {box-sizing: border-box;}
+
+     .row::after {content: "";clear: both;display: block;}
+ [class*="col-"] {float: left;padding: 15px;}
+ html            {font-family: "Lucida Sans", sans-serif;}
+
+        .menu ul {list-style-type: none;margin: 0;padding: 0;}
+        .menu li {padding: 8px;margin-bottom: 7px;background-color: #33b5e5;color: #ffffff;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+  .menu li:hover {background-color: #0099cc;}
+          .aside { background-color: #33b5e5;padding: 15px;color: #ffffff;text-align: center;font-size: 12px;box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+         .footer {background-color: #0099cc;color: #ffffff;text-align: center;font-size: 10px;padding: 15px;}
+/*desktop*/.col-1{width: 8.33%;}.col-2 {width: 16.66%;}.col-3 {width: 25%;}.col-4 {width: 33.33%;}.col-5 {width: 41.66%;}.col-6 {width: 50%;}.col-7 {width: 58.33%;}.col-8 {width: 66.66%;}.col-9 {width: 75%;}.col-10 {width: 83.33%;}.col-11 {width: 91.66%;}.col-12 {width: 100%;}
+/*phones*/@media only screen and (max-width: 768px) { [class*="col-"] {width: 100%;}}
+
+
+          li {padding: 10;}
+
+             ol { counter-reset: li;/* Initiate a counter*/list-style: none; /* Remove default numbering */ *list-style: decimal; /* Keep using default numbering for IE6/7 */ font: 15px 'trebuchet MS', 'lucida sans'; padding: 0; text-shadow: 0 1px 0 rgba(255,255,255,.5);}
+          ol ol {margin: 0 0 0 2em; /* Add some left margin for inner lists */}
+
+ .rounded-list a{ position: relative; top: -20px;  display: block; padding: .4em .4em .4em 2em; *padding: .4em; margin: .5em 0; background: #ddd; color: #444; text-decoration: none; border-radius: .3em; transition: all .3s ease-out;}
+.rounded-list a:hover{background: #eee;}
+.rounded-list a:hover:before{transform: rotate(360deg);}
+.rounded-list a:before{content: counter(li);counter-increment: li;position: absolute; left: -1.3em;top: 50%;margin-top: -1.3em;background: #87ceeb;height: 2em; width: 2em;line-height: 2em;border: .3em solid #fff;text-align: center;font-weight: bold;border-radius: 2em;transition: all .3s ease-out;}
+              a {cursor: pointer;}
+
+          strong{margin-top: 16px;display: block;font-weight: 700;}
+              p {padding: 24px;max-width: 760px;font-size: 22px;font-weight: 300;line-height: 1.9;}
+              a {cursor: pointer;}
+         strong {margin-top: 16px;display: block;font-weight: 700;}
+              p {padding: 24px;max-width: 760px;font-size: 22px;font-weight: 300; line-height: 1.9;}
+              a {position: relative;text-decoration: none;display: inline-block;color: black;padding: 0 1px;-webkit-transition: color ease 0.3s;transition: color ease 0.3s;}
+       a::after {content: '';position: absolute;z-index: -1;width: 100%;height: 5%;left: 0;bottom: 0;background-color: #00B388;-webkit-transition: all ease 0.3s;transition: all ease 0.3s;}
+        a:hover {color: white;}
+ a:hover::after {height: 100%;}
+
+            body {font-family: "Open Sans", sans-serif;margin: 0;padding: 0 4em; }
+            main {min-width: 300px;max-width: 500px;margin: auto;}
+             pre {white-space: pre-wrap;/* Since CSS 2.1 */white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */white-space: -pre-wrap;      /* Opera 4-6 */white-space: -o-pre-wrap;    /* Opera 7 */word-wrap: break-word;       /* Internet Explorer 5.5+ */
+                  font-size: 1em;line-height: 1.75em;border-top: 3px solid;-webkit-border-image: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));-webkit-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);-o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);border-image: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+                  border-image-slice: 1;border-width: 3px;margin: 0;padding: 40px;counter-increment: section;position: relative;color: #34435E;}
+      pre:before {content: counter(section);position: absolute;border-radius: 50%;padding: 10px;height: 1.25em;width: 1.25em;background-color: #34435E;text-align: center;line-height: 1.25em;color: #ffffff;font-size: 1em;}
+pre:nth-child(odd){border-right: 3px solid;padding-left: 0;}
+pre:nth-child(odd):before {left: 100%;margin-left: -20px;}
+pre:nth-child(even){border-left: 3px solid;padding-right: 0;}
+pre:nth-child(even):before {right: 100%;margin-right: -20px;}
+pre:first-child {border-top: 0;border-top-right-radius: 0;border-top-left-radius: 0;}
+        .CadetBlue{background-color: #3F3F3F;color: #fff; }/* Research */
+        .BurlyWood{background: WhiteSmoke;}
+         .Cornsilk{background: Cornsilk;}/* Research */
+             .Info{background: rgba(0,0,0,0.12);}
+
+blockquote        {  background: #f9f9f9;border-left: 1px solid #ccc; position: relative; top: -20px; background: white; -moz-box-shadow: 0 0 5px black; -webkit-box-shadow: 0 0 5px black; box-shadow: 0 0 5px black;}
+blockquote:before {color: #ccc;content: open-quote;font-size: 4em;line-height: 0.1em;vertical-align: -0.4em;}
+section               {display: block;unicode-bidi: embed;font-family: monospace;white-space: pre-wrap;}
+             pre {white-space: pre-wrap;/* Since CSS 2.1 */white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */white-space: -pre-wrap;      /* Opera 4-6 */white-space: -o-pre-wrap;    /* Opera 7 */word-wrap: break-word;       /* Internet Explorer 5.5+ */
+                  font-size: 1em;line-height: 1.75em;border-top: 3px solid;-webkit-border-image: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));-webkit-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);-o-border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);border-image: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+                  border-image-slice: 1;border-width: 3px;margin: 0;padding: 40px;counter-increment: section;position: relative;color: #34435E;}
+      pre:before {content: counter(section);position: absolute;border-radius: 50%;padding: 10px;height: 1.25em;width: 1.25em;background-color: #34435E;text-align: center;line-height: 1.25em;color: #ffffff;font-size: 1em;}
+
+</style>
+
+
+<ul class="nav" style="" onclick="openNav()">
+<li><a href="#"></a></li>
+</ul>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+<li><a href="#">Основная публикация</a></li>
+<li><a href="#hotlS"><font color="#cc0000">США</font></a></li>
+<li><a href="#hotlС"><font color="#cc0000">Канада</font></a></li>
+<li><a href="#hotlJ"><font color="#cc0000">Япония</font></a></li>
+<li><a href="#hotl0"><font color="#cc0000">Чехия</font></a></li>
+<li><a href="#hotlG"><font color="#cc0000">Германия</font></a></li>
+<li><a href="#hotlP"><font color="#cc0000">Польша</font></a></li>
+<li><a href="#hotlB"><font color="#cc0000">Белорусь</font></a></li>
+<li><a href="#hotlE"><font color="#cc0000">Европа</font></a></li>
+<li><a href="#hotlU"><font color="#cc0000">Украина</font></a></li>
+<li><a href="#hotlR"><font color="#cc0000">Россия</font></a></li>
+
+  </div>
+</div> 
+
+
+<body translate="no"><main>
+<ol class="rounded-list">
+<li><a href="#fact_"><font color="#cc0000">(339)Большой проблеммой может быть излишняя нагрузка на горячие линии, учитывайте это, не перегружайте их из-за простых вопросов</font></a></li>
+</ol>
+<ol class="rounded-list">
+
+
+
+
+<h1>Страны:</h1>
+<div id="hotlS" ></div>
+<li><a href="#fact_">CDC Coronavirus Hotline</a><blockquote>
+800-232-4636
+Open 24/7  </blockquote></li>
+
+<li><a href="#fact_">St. Joseph County Coronavirus Hotline</a><blockquote>
+2-1-1
+The United Way call system designed for people without access to a health care provider
+</blockquote></li>
+
+<li><a href="#fact_">Beacon Healthcare Coronavirus Hotline</a><blockquote>
+Beacon Answerline: 855-523-2225
+</blockquote></li>
+
+
+<li><a href="#fact_">Connecticut Hotline</a><blockquote>
+general information hotline to the public. Connecticut residents can call 2-1-1 or text “CTCOVID” to 898211.
+</blockquote></li>
+
+<li><a href="#fact_">Indiana Coronavirus Hotline</a><blockquote>
+877-826-0011Open 24/7</blockquote></li>
+
+<li><a href="#fact_">Michigan Coronavirus Hotline</a><blockquote>
+1-888-535-6136
+Open seven days a week from 8 a.m. to 5 p.m.
+</blockquote></li>
+
+
+<li><a href="#fact_">Indiana State Department of Health Coronavirus Public Hotline</a><blockquote>
+317-233-7125</blockquote></li>
+
+
+
+<div id="hotlС" ></div>
+<li><a href="#fact_">Канада</a><blockquote>
+CORONAVIRUS HOTLINE 1-833-784-4397
+</blockquote></li>
+
+
+
+<div id="hotlJ" ></div>
+<li><a href="#fact_"></a><blockquote>
+Okinawa Prefecture has set up a round-the-clock hotline serviced by medical professionals who provide information on medical institutions that can handle foreign languages. The service is available in English, Mandarin, Cantonese, Korean, Portuguese, Spanish, Vietnamese and Thai. The phone number is 0570-050-235.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The service is available on weekdays from 8:30 a.m. to 5:15 p.m. The phone number is 080-4275-4489.In Kumamoto Prefecture, the Kumamoto Support Center for Foreign Residents is offering telephone consultations in 18 languages: English, Chinese, Korean, Vietnamese, Nepalese, Indonesian, Tagalog, Thai, Portuguese, Spanish, Malay, French, Russian, German, Italian, Burmese, Khmer, and Mongolian.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 0985-41-5901.Calls are accepted from 10 a.m. to 7 p.m. from Tuesdays to Saturdays.The Miyazaki Support Center for Foreign Residents in Miyazaki Prefecture has services in 18 languages. They are English, Chinese, Korean, Thai, Vietnamese, Indonesian, Malay, Tagalog, Nepalese, Portuguese, Spanish, French, Russian, German, Italian, Myanmar, Mongolian and Khmer.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+Oita Prefecture provides service around the clock in 18 languages.When you call a public health center in the prefecture, you can get consultation with an assistance of an interpreter from a call center in the private sector.The service is available in English, Chinese, Portuguese, Tagalog, Vietnamese, Thai, Indonesian, Nepalese, Korean, Spanish, Khmer, Myanmar, Malay, French, Russian, German, Italian and Mongolian.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 092-286-9595.Fukuoka Prefecture has a hotline, which is available 24 hours a day, 365 days a year.The Multilingual Medical Information Service Call Center provides the service in 17 languages: English, Chinese, Korean, Thai, Vietnamese, Nepali, Tagalog, Indonesian, Portuguese, German, Russian, French, Spanish, Italian, Malay, Burmese, and Khmer.
+Beacon Answerline: 855-523-2225
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 092-687-6639.A hotline is also available for foreigners visiting Yamaguchi Prefecture and those in the Kyushu region. The service is provided 24 hours a day, 365 days a year.The service is available in 17 languages: English, Chinese, Korean, Thai, Vietnamese, Nepali, Tagalog, Indonesian, Portuguese, German, Russian, French, Spanish, Italian, Malay, Burmese, and Khmer.
+Beacon Answerline: 855-523-2225
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 083-995-2100.In Yamaguchi Prefecture, Consultation Center for Foreign Nationals offers services in four languages.Service in English and Vietnamese is available from 10 am to 4 pm on Wednesday and Friday. Consultation in Chinese and Tagalog is offered from 10 am to 4 pm on Tuesday and Thursday.
+Beacon Answerline: 855-523-2225
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 0120-783-806.Calls are accepted from 8:30 a.m. to 7 p.m. on weekdays and from 9:30 a.m. to 6 p.m. on Saturdays.In Hiroshima Prefecture, the Hiroshima International Center is accepting consultations in ten languages. They are English, Chinese, Vietnamese, Korean, Tagalog, Portuguese, Indonesian, Thai, Spanish and Nepalese.
+Beacon Answerline: 855-523-2225
+</blockquote></li>
+
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 06-6773-6533.Osaka Prefecture is offering telephone services in 10 languages including English, Chinese, Korean, Portuguese, Spanish, Vietnamese, Tagalog, Thai, Indonesian and Nepalese. The Osaka Foundation of International Exchange is providing a hotline on weekdays and on the second and fourth Sundays. The phone number is 06-6941-2297.The Osaka International House Foundation is also offering telephone services in English, Chinese, Korean, Vietnamese and Tagalog.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+And the Osaka Convention & Tourism Bureau has a hotline exclusively in Chinese. The phone numbers are 080-1460-7627 and 080-1463-3489.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 078-382-2052.The services are available in four languages: English, Chinese, Spanish and Portuguese.In Hyogo Prefecture, the Hyogo International Association Information and Advisory Service offers consultation services from 9 a.m. to 5 p.m. on weekdays.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 075-343-9666.Kyoto Prefecture is offering the telephone support services in English, Chinese, Korean, Vietnamese, Thai, Portuguese and Spanish. The service is provided by the Kyoto Prefectural International Center every day, except for the second and fourth Tuesdays and holidays. 
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 077-523-5646.In Shiga Prefecture, Shiga Foreign Residents Information Center accepts inquiries in 12 languages from 10 am to 5 pm on weekdays.The service is available in English, Chinese, Portuguese, Tagalog, Vietnamese, Thai, Indonesian, Nepalese, Korean, Spanish, Russian and Hindi.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 073-435-5240.Wakayama Prefecture is providing information in English, Chinese and Tagalog through the Wakayama International Exchange Center. Tagalog is available from 10 a.m. to 4 p.m. on Mondays, Thursdays and Saturdays. English and Chinese are available from 10 a.m. to 5 p.m. every day except Wednesday. 
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+Aichi Prefecture is offering support through its Multilingual Call Center. The call center can be accessed using a smartphone, by first visiting the prefecture's official tourism site Aichi Now, where there is a link to the call center page. A call can be made by pressing the button on the page.The service is available in 9 languages: English, Chinese, Korean, Portuguese, and Spanish for 24 hours.Thai service is available from 9 a.m. to 6 p.m.. Calls in Vietnamese, Tagalog, and French can be made from 10 a.m. to 7 p.m..
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 080-3300-8077. Mie Prefecture is offering telephone information in 10 languages: English, Portuguese, Spanish, Tagalog, Chinese, Korean, Vietnamese, Nepalese, Indonesian and Thai.The service is provided by the Mie Consultation Center for Foreign Residents on weekdays from 9 a.m. to 5 p.m.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 058-263-8066.In Gifu Prefecture, the Gifu Prefectural Consultation Center for Foreign Residents accepts inquiries in 14 languages from 9: 30 a.m. to 4: 30 p.m. on weekdays.The service is available in English, Chinese, Portuguese, Tagalog, Vietnamese, Thai, Indonesian, Nepalese, Korean, Spanish, Khmer, Myanmar, Malay and Mongolian.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 076-222-5950.In Ishikawa Prefecture, the Ishikawa Foundation for International Exchange is offering phone consultations in five languages: English, Chinese, Korean, Portuguese and Russian.The service is available on weekdays, from 9:15 a.m. to 5:15 p.m. 
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 0120-691-792.In Nagano Prefecture, the Nagano Multilingual Call Center is offering telephone consultations free of charge around the clock every day of the year.The service is available in 17 languages: English, Chinese, Korean, Thai, Indonesian, German, French, Italian, Russian, Spanish, Portuguese, Vietnamese, Nepalese, Tagalog, Malay, Burmese, and Khmer.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 03-5285-8181. The Tokyo Metropolitan Government is offering a hotline for speakers of English, Chinese, Korean, Spanish and Thai and can refer people to relevant public health centers as necessary. The service is provided by the Tokyo Metropolitan Health and Medical Information Center "Himawari" from 9 a.m. to 8 p.m. every day including weekends and holidays.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 048-833-3296.In Saitama Prefecture, the Saitama Information & Support is offering telephone support services in 10 languages: English, Chinese, Spanish, Portuguese, Korean, Tagalog, Thai, Vietnamese, Indonesian and Nepalese.The service is available on weekdays from 9 a.m. to 4 p.m. 
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 027-289-8275.In Gunma Prefecture, the One-Stop Consultation Center for Foreign Residents of Gunma is accepting inquiries in 5 languages from 9 a.m. to 5 p.m.The service is available in English and Vietnamese from Mondays to Fridays, in Portuguese from Mondays to Wednesdays, and in Chinese and Spanish on Mondays, Tuesdays, Thursdays and Fridays.The services in English and Portuguese will be available from 10 a.m. to 4 p.m. on weekends until the end of March.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 055-222-3390.The Yamanashi Foreign Consultation Centre in Yamanashi Prefecture accepts calls in ten languages.Consultations can be made in English, Chinese, Portuguese, Korean, Spanish, Indonesian, Nepalese, Vietnamese, Thai and Tagalog from 9 am to 4 pm from Tuesdays to Saturdays.
+</blockquote></li>
+
+<li><a href="#fact_"></a><blockquote>
+The phone number is 011-200-9595. The service is available on weekdays from 9 a.m. to 4 p.m.Hokkaido Prefecture is also providing an information hotline in English, Chinese, Korean, Vietnamese, Tagalog, Thai, Russian, Nepalese, Indonesian and Burmese. The service is provided by the Hokkaido Foreign Resident Support Center. 
+</blockquote></li>
+
+
+<div id="hotl0" ></div>
+<li><a href="#fact_">Чехия</a><blockquote>
+Nonstop hotline of the National Institute of Public Health:
++420 724 810 106  and  +420 725 191 367
+</blockquote></li>
+
+<div id="hotlG" ></div>
+<li><a href="#fact_">Германия</a><blockquote>
+Coronavirus: Hotline (030) 9028-2828. The Senate Department for Health, Long-Term Care and Gender Equality set up a hotline on 28 January 2020 to advise Berliners who believe they may have contracted the virus. 
+</blockquote></li>
+
+<div id="hotlP" ></div>
+<li><a href="#fact_">Польша</a><blockquote>
+special 24-hour National Health Fund hotline for dealing with coronavirus infection: number in Poland +48 800 190 590
+</blockquote></li>
+
+<div id="hotlB" ></div>
+<li><a href="#fact_">Белорусь</a><blockquote>
+Республиканский центр гигиены, эпидемиологии и общественного здоровья — +375 29 156−85−65, звонки принимаются в рабочие дни с 8.30 до 13.00 и с 13.30 до 18.00.
+</blockquote></li>
+
+<li><a href="#fact_">Минск</a><blockquote>
+Для жителей Минска по вопросам коронавирусной инфекции открыта горячая линия в Минской инфекционной больнице по номеру: +375 17 334−34−68 с 8.30 до 15.00.
+</blockquote></li>
+
+
+<li><a href="#fact_">Витебск</a><blockquote>
+8 0212 67−36−44, 
+</blockquote></li>
+
+<li><a href="#fact_">Полоцк</a><blockquote>
+8 0214 74−39−44,
+</blockquote></li>
+
+<li><a href="#fact_">Новополоцк </a><blockquote>
+8 0214 57−36−44,
+</blockquote></li>
+
+<li><a href="#fact_">Орша</a><blockquote>
+8 0216 51−34−41 и 51−34−48.
+</blockquote></li>
+
+<div id="hotlU" ></div>
+<li><a href="#fact_">Украина</a><blockquote>
+Если у вас нет семейного врача, то следует обращаться на “горячую линию” НСЗУ (Национальная служба здоровья Украины), где посоветуют, что делать.
+Звоните по телефону – 1677 Телефон горячей линии Минздрава Украины 0 800 505 201
+
+Киев и Киевская область - 103, 0-800-50-52-01, (04563) 10-0-46, (0456) 31-00-46
+Винницкая - 103, (0432) 66-12-05
+Волынская - (0332) 77-65-84 и (0332) 77-65-82
+Днепропетровская - (067) 611-08-86, (068) 979-96-24
+Донецкая - (06272) 26-8-27, (063) 809-45-17
+Житомирская - (068) 982-47-81
+Закарпатская - (03126) 96-1-15
+Запорожская - (098) 29-4-72, (061) 228-04-94
+Ивано-Франковская - (099) 544-83-32, (0342) 56-69-28
+Кировоградская - (0522) 24-13-14 (с 9:00 до 18:00), 0-800-50-02-38
+Луганская - 15-45, 0-800-50-51-07
+Львовская - 15-80, (032) 260-19-18
+Николаевская 103, 0-800-80-13-33 (с 9:00 до 18:00)
+Одесская - 15-50 и 0-800-50-15-50
+Полтавская - 0-800-50-50-32
+Ровенская 0-800-50-00-78
+Сумская - 103, (0542) 68-20-90
+Тернопольская - 103
+Харьковская - (057) 712-45-00
+Херсонская - 103, (0552) 22-57-90 (с 8:00 до 17:00)
+Хмельницкая - (0382) 70-43-63 (круглосуточно), (0382) 70-38-05 (с 8:30 до 17:30)
+Черкасская - (0472) 64-91-82, (0472) 64-92-39 (с 8:00 до 18:00)
+Черновицкая - (066) 084-93-13
+Черниговская - 0-800-50-70-70, (095) 001-03-40
+
+Горячая линия Министерства здравоохранения: 0-800-50-52-01
+
+Центр Общественного здоровья МОЗ - (044) 425-43-54.
+
+В случае возникновения респираторных заболеваний сразу обращайтесь к семейному врачу для определения точного диагноза. Если по каким-то причинам это невозможно, к вам не хочет ехать скорая, отказываются принимать в больнице или у вас есть безотлагательные вопросы по ситуации с коронавирусом, звоните на правительственную горячую линию 1545.
+
+Минздрав Украины
+Те граждане, которые вернулись из-за границы или же контактировали с приехавшими оттуда и обнаружили у себя описанные симптомы, должны позвонить своему участковому врачу или на горячую линию 1545.
+</blockquote></li>
+
+<li><a href="#fact_">Мариуполь</a><blockquote>
+COVID-19 – 0 800 505 201 или к врачам, которые дадут полезные советы – 1583 и 044 235 0101.На волнующие вопросы готовы ответить на горячей линии МОЗ – 1677, правительственной горячей линии – 1545 и на официальном сайте.
+</blockquote></li>
+
+<div id="hotlL" ></div>
+<li><a href="#fact_">Тюменская область</a><blockquote>
+Горячая линия для вернувшихся в Тюменскую область из-за границы после 1 марта: 8-800-234-35-22
+
+Консультационный пункт для одиноких пожилых людей, инвалидов и матерей-одиночек с детьми до 3-х лет в Тюмени: 8-800-201-41-41
+
+Горячая линия Управления Роспотребнадзора по ТО: 8 9044-92-92-30
+
+Горячая линия Департамента здравоохранения ТО: 8(3452) 68-45-65, 8-800-250-30-91 (звонок бесплатный).
+</blockquote></li>
+
+<li><a href="#fact_">Молдова</a><blockquote>
+Телефон "Горячей линии" - 0 800 12300 https://www.kp.md/daily/27104.5/4178394/
+</blockquote></li>
+
+<li><a href="#fact_">Приднестровье</a><blockquote>
+на горячую линию можно звонить по телефону 0-800-22-800 круглосуточно.
+</blockquote></li>
+
+
+<li><a href="#fact_">Россия</a><blockquote>
+Сообщите о возвращении из страны с неблагополучной эпидемиологической ситуацией: заполните анкету онлайн или звоните на горячую линию +7 (495) 870-45-09 (ежедневно, с 08:00 до 21:00)
+Запуске единой бесплатной горячей линии "https://стопкоронавирус.рф// стопкоронавирус". "Линия протестирована, ее номер — 8 800 2000 112", — сказал Чернышенко.
+
+горячую линию по вопросам обеспечения масками открыли в России 8 800 550-99-03. 
+Горячая линия для граждан России, которые не смогли купить в аптеках защитные медицинские маски и противовирусные препараты, заработала в стране.
+
+8-800-555-49-43
+В Роспотребнадзоре работает Единый консультационный центр. Специалисты центра работают в круглосуточном режиме и без выходных дней, отвечая на вопросы о санитарно-эпидемической ситуации и защите прав потребителей. 
+</blockquote></li>
+
+<li><a href="#fact_">Республике Коми</a><blockquote>
+«горячая линия» для приема сообщений от граждан, вернувшихся из неблагополучных по распространению коронавирусной инфекции стран. Звонки принимаются круглосуточно по телефону 8-800-55-00000.
+</blockquote></li>
+
+<li><a href="#fact_">Тверская область</a><blockquote>
+Для того чтобы COVID-19 не распространялся дальше, гражданам, у которых был контакт с больными или тем, кто вернулся из путешествия, командировки, необходимо сообщить о своем возвращении в штаб по борьбе с коронавирусной инфекцией региона (телефон: 8-800-333-93-72)
+</blockquote></li>
+
+<li><a href="#fact_">Тверская область</a><blockquote>
+Для того чтобы COVID-19 не распространялся дальше, гражданам, у которых был контакт с больными или тем, кто вернулся из путешествия, командировки, необходимо сообщить о своем возвращении в штаб по борьбе с коронавирусной инфекцией региона (телефон: 8-800-333-93-72)
+</blockquote></li>
+
+<li><a href="#fact_">Свердловская область</a><blockquote>
+"Номер 112 работает в круглосуточном режиме, на сутки выводится 16 диспетчеров, готовых принимать вызовы и консультировать по любым вопросам о коронавирусе.
+</blockquote></li>
+
+
+<li><a href="#fact_"></a><blockquote></blockquote></li>
+
+<li><a href="#fact_"></a><blockquote></blockquote></li>
+
+</ol></blockquote></li>
+
