@@ -615,6 +615,108 @@ section::after {
 
 
 
+#section11 a {
+  padding-top: 80px;position: relative;left:40%;
+}
+#section11 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section11 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section11 a span::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  content: '';
+  margin-left: -9px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+#section12 a {
+  padding-top: 60px;position: relative;left:40%;
+}
+#section12 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section12 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
 
 </style>
@@ -976,13 +1078,13 @@ new MiniBar('#myContent');
 <div class="msc-content"><link rel="stylesheet" href="dist/0000.css">
 
 
+
+
 <section id="section01" class="demo">
 <h1>Быстрая информация</h1>
 <div class="logo"  style="overflow: hidden-x; height: 79%; ">
 <iframe src="quic.htm"  class="logo" style=" border: 0px none; height: 79%; width: 98%;min-height: 18%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section02"><span></span>К основной статьи</a>
+</div><a href="#section02"><span></span>К основной статьи</a>
 </section>
 
 
@@ -990,48 +1092,31 @@ new MiniBar('#myContent');
 <h1>Основная информация</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
 <iframe src="main.htm"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section03"><span></span>К статистике</a>
+</div><a href="#section03"><span></span>К статистике</a>
 </section>
-
-
-
-
 
 
 <section id="section03" class="demo">
 <h1>Статистика</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
 <iframe src="stat.html"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section04"><span></span>К рейтингу стран(ИВЛ, тесты...)</a>
+</div><a href="#section04"><span></span>К рейтингу стран(ИВЛ, тесты...)</a>
 </section>
-
-
-
 
 
 <section id="section04" class="demo">
 <h1>Рейтинг стран по аппаратам ИВЛ, тестам...</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
 <iframe src="test.htm"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section05"><span></span>Хроника за 80+ дней</a>
+</div><a href="#section05"><span></span>Хроника за 80+ дней</a>
 </section>
-
-
 
 
 <section id="section05" class="demo">
 <h1>Хроника новостей за 80+ дней</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
 <iframe src="news.htm"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section06"><span></span>К событиям</a>
+</div><a href="#section06"><span></span>К событиям</a>
 </section>
 
 
@@ -1040,52 +1125,54 @@ new MiniBar('#myContent');
 <h1>События связанные с коронавирусом в.т.ч отмененные</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
 <iframe src="even.htm"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section07"><span></span>К Статистике городов</a>
+</div><a href="#section07"><span></span>К Статистике городов</a>
 </section>
 
-
-
 <section id="section07" class="demo">
-<h1>Статистика городов</h1>
+<h1>Мировые гарачие линии</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
-<iframe src="city.html"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section08"><span></span>К Гарячим линиям</a>
+<iframe src="hotl.htm"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
+</div><a href="#section08"><span></span>Мейкери</a>
 </section>
 
 
 <section id="section08" class="demo">
-<h1>Мировые гарачие линии</h1>
+<h1>Статистика городов и стран</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
-<iframe src="hotl.htm"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
-</div>
-
-<a href="#section09"><span></span>Мейкери</a>
+<iframe src="city.html"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
+</div><a href="#section09"><span></span>К Гарячим линиям</a>
 </section>
 
 
-
 <Section id = "section09" class = "demo">
-<H1> Мейкери </h1>
+<H1> Знаменитости </h1>
 <Div class = "logo" style = "overflow: hidden-x; height: 83%;">
-<Iframe src = "make.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
-</Div>
-
-<a href="#section10"> <span> </span> Быстрая статистика </a>
+<Iframe src = "cele.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
+</Div><a href="#section10"> <span> </span> Быстрая статистика </a>
 </Section>
+
+
 
 <Section id = "section10" class = "demo">
 <H1> Быстрая статистика </h1>
 <Div class = "logo" style = "overflow: hidden-x; height: 83%;">
 <Iframe src = "0sta.htm" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
-</Div>
-
-<a href="#thanks"> <span> </span> Другое </a>
+</Div><a href="#section11"> <span> </span> Другое </a>
 </Section>
 
+<Section id = "section11" class = "demo">
+<H1> Мейкери </h1>
+<Div class = "logo" style = "overflow: hidden-x; height: 83%;">
+<Iframe src = "make.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
+</Div><a href="#section12"> <span> </span> Быстрая статистика </a>
+</Section>
+
+<Section id = "section12" class = "demo">
+<H1> Професиональное лечение и профилактика </h1>
+<Div class = "logo" style = "overflow: hidden-x; height: 83%;">
+<Iframe src = "docu.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
+</Div><a href="#thanks"> <span> </span> Другое </a>
+</Section>
 
 
 
