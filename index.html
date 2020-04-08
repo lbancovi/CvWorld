@@ -718,7 +718,127 @@ section::after {
   }
 }
 
+#section13 a {
+  padding-top: 60px;position: relative;left:40%;
+}
+#section13 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section13 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
+#section14 a {
+  padding-top: 60px;position: relative;left:40%;
+}
+#section14 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section14 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb14 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 </style>
 <style>
 
@@ -1137,44 +1257,56 @@ new MiniBar('#myContent');
 
 
 <section id="section08" class="demo">
-<h1>Статистика городов и стран</h1>
+<h1>Статистика городов</h1>
 <div class="logo"  style="overflow: hidden-x; height: 83%; ">
 <iframe src="city.html"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
 </div><a href="#section09"><span></span>К Гарячим линиям</a>
 </section>
 
+<section id="section09" class="demo">
+<h1>Статистика стран</h1>
+<div class="logo"  style="overflow: hidden-x; height: 83%; ">
+<iframe src="coun.html"  class="logo" style=" border: 0px none; height: 83%; width: 98%;min-height: 28%; margin-top: 5%;  "></iframe>
+</div><a href="#section10"><span></span>К Гарячим линиям</a>
+</Section>
 
-<Section id = "section09" class = "demo">
+<Section id = "section10" class = "demo">
 <H1> Знаменитости </h1>
 <Div class = "logo" style = "overflow: hidden-x; height: 83%;">
 <Iframe src = "cele.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
-</Div><a href="#section10"> <span> </span> Быстрая статистика </a>
+</Div><a href="#section11"> <span> </span> Быстрая статистика </a>
 </Section>
 
 
 
-<Section id = "section10" class = "demo">
+<Section id = "section11" class = "demo">
 <H1> Быстрая статистика </h1>
 <Div class = "logo" style = "overflow: hidden-x; height: 83%;">
 <Iframe src = "0sta.htm" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
-</Div><a href="#section11"> <span> </span> Другое </a>
-</Section>
-
-<Section id = "section11" class = "demo">
-<H1> Мейкери </h1>
-<Div class = "logo" style = "overflow: hidden-x; height: 83%;">
-<Iframe src = "make.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
-</Div><a href="#section12"> <span> </span> Быстрая статистика </a>
+</Div><a href="#section12"> <span> </span> Другое </a>
 </Section>
 
 <Section id = "section12" class = "demo">
+<H1> Мейкери </h1>
+<Div class = "logo" style = "overflow: hidden-x; height: 83%;">
+<Iframe src = "make.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
+</Div><a href="#section13"> <span> </span> Быстрая статистика </a>
+</Section>
+
+<Section id = "section13" class = "demo">
 <H1> Професиональное лечение и профилактика </h1>
 <Div class = "logo" style = "overflow: hidden-x; height: 83%;">
-<Iframe src = "docu.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
-</Div><a href="#thanks"> <span> </span> Другое </a>
+<Iframe src = "w_doc.html" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
+</Div><a href="#section14"> <span> </span> Другое </a>
 </Section>
 
 
+<Section id = "section14" class = "demo">
+<H1> Сайт рейтинг  </h1>
+<Div class = "logo" style = "overflow: hidden-x; height: 83%;">
+<Iframe src = "" class = "logo" style = "border: 0px none; height: 83%; width: 98%; min-height: 28%; margin-top: 5%;"> </iframe>
+</Div><a href="#thanks"> <span> </span> Другое </a>
+</Section>
 
 
 
